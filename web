@@ -1,0 +1,86 @@
+# using new module11
+import webbrowser
+import urllib.parse
+
+site1 = "www.google.com"
+site2 = "www.yahoo.com"
+site3 = "www.firefox.com"
+site4 = "www.microsoftedge.com"
+site5 = "www.opera.com"
+url1 = 'http://google.com/'
+url2 = 'http://yahoo.com/'
+url3 = 'http://firefox.com/'
+url4 = 'http://Microsoft Edge/'
+url5 = 'http://opera.com/'
+while True:
+    print("WHICH SEARCH ENGINE DO YOU WANT")
+    print("press 1 : GOOGLE")
+    print("press 2 : YAHOO")
+    print("press 3 : FIREFOX")
+    print("press 4 : MICROSOFT EDGE")
+    print("press 5 : OPERA")
+    option = int(input("enter the option"))
+    if option == 1:
+        print("press 1 : DO YOU WANT LINK OF THE SEARCH ENGINE \npress 2 : YOUR WANT TO DIRECT OPEN THE SEARCH ENGINE")
+        opt = int(input("enter the option"))
+        if opt == 1:
+            print("link :", site1)
+        elif opt == 2:
+            # chrome_path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"  # Example path, adjust as needed
+            # browser = webbrowser.Chrome(chrome_path)
+            # browser.open(url1)
+            search_query = input("enter query: ")
+            search_url = url1 + urllib.parse.quote(search_query)
+            webbrowser.open(search_url)
+        print("---------------------------------------")
+    elif option == 2:
+        print("press 1 : DO YOU WANT LINK OF THE SEARCH ENGINE \npress 2 : YOUR WANT TO DIRECT OPEN THE SEARCH ENGINE")
+        opt = int(input("enter the option"))
+        if opt == 1:
+            print("link :", site2)
+        elif opt == 2:
+            # chrome_path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"  # Example path, adjust as needed
+            # browser = webbrowser.Chrome(chrome_path)
+            # browser.open(url1)
+            search_query = input("enter query: ")
+            search_url = url2 + urllib.parse.quote(search_query)
+            webbrowser.open(search_url)
+        print("---------------------------------------")
+    elif option == 3:
+        print("press 1 : DO YOU WANT LINK OF THE SEARCH ENGINE \npress 2 : YOUR WANT TO DIRECT OPEN THE SEARCH ENGINE")
+        opt = int(input("enter the option"))
+        if opt == 1:
+            print("link :", site3)
+        elif opt == 2:
+            # chrome_path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"  # Example path, adjust as needed
+            # browser = webbrowser.Chrome(chrome_path)
+            # browser.open(url1)
+            search_query = input("enter query: ")
+            search_url = url3 + urllib.parse.quote(search_query)
+            webbrowser.open(search_url)
+        print("---------------------------------------")
+    elif option == 4:
+        print("press 1 : DO YOU WANT LINK OF THE SEARCH ENGINE \npress 2 : YOUR WANT TO DIRECT OPEN THE SEARCH ENGINE")
+        opt = int(input("enter the option"))
+        if opt == 1:
+            print("link :", site4)
+        elif opt == 2:
+            # chrome_path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"  # Example path, adjust as needed
+            # browser = webbrowser.Chrome(chrome_path)
+            # browser.open(url1)
+            search_query = input("enter query: ")
+            search_url = url4 + urllib.parse.quote(search_query)
+            webbrowser.open(search_url)
+        print("---------------------------------------")
+    elif option == 5:
+        print("press 1 : DO YOU WANT LINK OF THE SEARCH ENGINE \npress 2 : YOUR WANT TO DIRECT OPEN THE SEARCH ENGINE")
+        opt = int(input("enter the option"))
+        if opt == 1:
+            print("link :", site5)
+        elif opt == 2:
+            # chrome_path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"  # Example path, adjust as needed
+            # browser = webbrowser.Chrome(chrome_path)
+            # browser.open(url1)
+            search_query = input("enter query: ")
+            search_url = url5 + urllib.parse.quote(search_query)
+            webbrowser.open(search_url)
